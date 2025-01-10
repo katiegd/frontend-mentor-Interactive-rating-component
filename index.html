@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+</head>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+      body {
+        font-family: "Overpass", sans-serif;
+        background-color: hsl(216, 12%, 8%);
+        color: hsl(0, 0%, 100%);
+      }
+
+      .attribution {
+        position: absolute;
+        bottom: 0;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 10%));
+        padding: 2rem;
+        border-radius: 2rem;
+        gap: 1rem;
+      }
+
+      .star-image {
+        width: 5%;
+        background-color: hsla(217, 12%, 63%, 0.10);
+        padding: 1rem;
+        border-radius: 50%;
+      }
+
+      .ratings {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      h1 {
+        margin-bottom: -1rem;
+      }
+
+      .ratings p {
+        margin-top: -1rem;
+        color: rgba(255, 255, 255, 0.812);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:1rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color:  hsla(217, 12%, 63%, 0.10);
+      }
+
+      .ratings p:hover, .button:hover {
+        background-color: hsl(0, 0%, 100%);
+        color:  hsl(216, 12%, 8%);        cursor: pointer;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.492);
+        line-height: 2rem;
+      }
+
+      .button {
+        background-color: hsl(25, 97%, 53%);
+        padding: 1rem;
+        display: flex;
+        font-weight: 700;
+        font-size: .9rem;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color:  hsl(216, 12%, 8%);
+        border-radius: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <!-- Rating state start -->
+    <div class="container">
+    <img src="./images/icon-star.svg" alt="" class="star-image"/>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All
+    feedback is appreciated to help us improve our offering!</p>
+    <div class="ratings">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p> </div>
+    <div class="button">Submit</div>
+</div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+  </body>
+</html>
